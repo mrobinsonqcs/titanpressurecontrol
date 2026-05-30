@@ -14,6 +14,7 @@
       const isOpen = navToggle.classList.toggle('is-open');
       mobileMenu.classList.toggle('is-open', isOpen);
       navToggle.setAttribute('aria-expanded', String(isOpen));
+      document.body.style.overflow = isOpen ? 'hidden' : '';
     });
 
     // Close mobile menu when clicking a link
@@ -22,6 +23,7 @@
         navToggle.classList.remove('is-open');
         mobileMenu.classList.remove('is-open');
         navToggle.setAttribute('aria-expanded', 'false');
+        document.body.style.overflow = '';
       });
     });
   }
