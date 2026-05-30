@@ -1012,6 +1012,44 @@ section { padding: var(--space-8) 0; }
 
 .form-field textarea { min-height: 140px; resize: vertical; }
 
+.form-field.has-error input,
+.form-field.has-error select,
+.form-field.has-error textarea {
+  border-color: var(--titan-red);
+}
+
+.field-error {
+  font-size: var(--fs-xs);
+  color: var(--titan-red);
+  font-weight: 600;
+  letter-spacing: 0.03em;
+}
+
+.form-error-banner {
+  background: #fff0f0;
+  border: 1px solid var(--titan-red);
+  color: var(--titan-red);
+  font-size: var(--fs-sm);
+  font-weight: 600;
+  padding: var(--space-3) var(--space-4);
+  margin-bottom: var(--space-4);
+}
+
+.form-success {
+  padding: var(--space-6);
+  text-align: center;
+}
+
+.form-success h3 {
+  text-transform: uppercase;
+  margin-bottom: var(--space-3);
+}
+
+.form-success p {
+  color: var(--titan-steel);
+  font-size: var(--fs-base);
+}
+
 /* ---------- About / Locations content ---------- */
 .content-block {
   display: grid;
