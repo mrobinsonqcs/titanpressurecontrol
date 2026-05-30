@@ -1161,6 +1161,30 @@ section { padding: var(--space-8) 0; }
 }
 .footer-col a:hover { color: var(--titan-white); }
 
+/* ---------- Products sticky nav active state ---------- */
+.product-nav-link {
+  color: var(--titan-fog);
+  font-weight: 600;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  position: relative;
+  padding-bottom: var(--space-1);
+  transition: color var(--transition-base);
+}
+.product-nav-link:hover { color: var(--titan-white); }
+.product-nav-link.active {
+  color: var(--titan-white);
+}
+.product-nav-link.active::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 2px;
+  background: var(--titan-red);
+}
+
 .footer-meta {
   display: flex;
   flex-direction: column;

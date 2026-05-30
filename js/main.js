@@ -38,6 +38,25 @@
     }
   });
 
+  // Products page: highlight sticky nav link for the section currently in view
+  const productNavLinks = document.querySelectorAll('.product-nav-link');
+  if (productNavLinks.length && 'IntersectionObserver' in window) {
+    const productSections = document.querySelectorAll('.product-section[id]');
+    const setActive = (id) => {
+      productNavLinks.forEach(link => {
+        link.classList.toggle('active', link.getAttribute('href') === '#' + id);
+      });
+    };
+    // rootMargin pushes the trigger line down past the sticky headers (~140px)
+    const sectionObserver = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) setActive(entry.target.id);
+      });
+    }, { rootMargin: '-140px 0px -50% 0px', threshold: 0 });
+
+    productSections.forEach(sec => sectionObserver.observe(sec));
+  }
+
   // Lightweight scroll-reveal: add 'reveal' class to elements with [data-reveal]
   if ('IntersectionObserver' in window) {
     const revealElements = document.querySelectorAll('[data-reveal]');
