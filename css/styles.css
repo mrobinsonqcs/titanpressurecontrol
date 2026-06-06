@@ -775,6 +775,9 @@ section { padding: var(--space-8) 0; }
   padding: var(--space-9) 0;
   position: relative;
   overflow: hidden;
+  background-image: linear-gradient(rgba(10,10,10,0.75), rgba(10,10,10,0.75)), url('../assets/atmosphere/atmosphere-quote-bg.png');
+  background-size: cover;
+  background-position: center;
 }
 
 .quote-block-bg {
