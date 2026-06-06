@@ -10,6 +10,21 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700;800;900&family=Manrope:wght@400;500;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="css/styles.css">
+  <style>
+    @media (min-width: 768px) {
+      .product-subsection {
+        grid-template-columns: 1fr 1fr 1fr;
+        align-items: start;
+      }
+    }
+    .product-subsection-img {
+      width: 100%;
+      aspect-ratio: 1 / 1;
+      object-fit: cover;
+      display: block;
+      background: var(--titan-charcoal);
+    }
+  </style>
 </head>
 <body>
   <a class="skip-to-content" href="#main-content">Skip to main content</a>
@@ -85,11 +100,11 @@
 
       <!-- Frac Stacks -->
       <div class="product-subsection">
-        <div>
+        <div class="product-subsection-meta">
           <h3>Frac Stacks</h3>
           <p style="font-size: var(--fs-sm); color: var(--titan-steel);">High-pressure frac stacks built for multi-well pad operations and single-well sites.</p>
         </div>
-        <div>
+        <div class="product-subsection-specs">
           <ul class="product-specs">
             <li><span class="label">Pressure Rating</span><span class="value">10K &amp; 15K</span></li>
             <li><span class="label">Valve Configurations</span><span class="value">Serviceless · Traditional · Hydraulic · Manual</span></li>
@@ -98,15 +113,16 @@
             <li><span class="label">Special Features</span><span class="value">7-1/16" large bore valves with "EZ Torque" Ball Screws</span></li>
           </ul>
         </div>
+        <img class="product-subsection-img" src="assets/products/product-fracstack-front.png" alt="Frac Stacks">
       </div>
 
       <!-- Zipper Manifolds -->
       <div class="product-subsection">
-        <div>
+        <div class="product-subsection-meta">
           <h3>Zipper Manifolds</h3>
           <p style="font-size: var(--fs-sm); color: var(--titan-steel);">Multi-well zipper manifolds for streamlined transitions between wells on a pad.</p>
         </div>
-        <div>
+        <div class="product-subsection-specs">
           <ul class="product-specs">
             <li><span class="label">Pressure Rating</span><span class="value">10K &amp; 15K</span></li>
             <li><span class="label">Valve Configurations</span><span class="value">Serviceless · Traditional · Hydraulic · Manual</span></li>
@@ -114,15 +130,16 @@
             <li><span class="label">Compatible With</span><span class="value">Frac stacks · FastLine systems · Automation packages</span></li>
           </ul>
         </div>
+        <img class="product-subsection-img" src="assets/products/product-zipper-manifold-front.png" alt="Zipper Manifolds">
       </div>
 
       <!-- FastLine Manifolds -->
       <div class="product-subsection">
-        <div>
+        <div class="product-subsection-meta">
           <h3>FastLine Manifolds</h3>
           <p style="font-size: var(--fs-sm); color: var(--titan-steel);">Single full-bore flow path for fracking multi-well pads — eliminates traditional flow iron and dramatically reduces connection points.</p>
         </div>
-        <div>
+        <div class="product-subsection-specs">
           <ul class="product-specs">
             <li><span class="label">Bore Size</span><span class="value">7-1/16"</span></li>
             <li><span class="label">Pressure Rating</span><span class="value">10K &amp; 15K configurations</span></li>
@@ -131,21 +148,23 @@
             <li><span class="label">Valve Actuation</span><span class="value">"EZ Torque" Ball Screws or pneumatic actuators</span></li>
           </ul>
         </div>
+        <img class="product-subsection-img" src="assets/products/product-fastline-manifold-front.png" alt="FastLine Manifolds">
       </div>
 
       <!-- FastLine Remote Lines -->
       <div class="product-subsection">
-        <div>
+        <div class="product-subsection-meta">
           <h3>FastLine Remote Lines</h3>
           <p style="font-size: var(--fs-sm); color: var(--titan-steel);">7-1/16" API remote lines designed to integrate with our complete FastLine system.</p>
         </div>
-        <div>
+        <div class="product-subsection-specs">
           <ul class="product-specs">
             <li><span class="label">Specification</span><span class="value">7-1/16" API</span></li>
             <li><span class="label">Compatible With</span><span class="value">Frac stacks · Zipper manifolds · FastLine manifolds</span></li>
             <li><span class="label">Designed For</span><span class="value">High-volume, multi-well pad operations</span></li>
           </ul>
         </div>
+        <img class="product-subsection-img" src="assets/products/product-remote-line-front.png" alt="FastLine Remote Lines">
       </div>
 
     </div>
@@ -165,11 +184,11 @@
 
       <!-- Wellheads & Tubing Heads -->
       <div class="product-subsection">
-        <div>
+        <div class="product-subsection-meta">
           <h3>Wellheads &amp; Tubing Heads</h3>
           <p style="font-size: var(--fs-sm); color: var(--titan-steel);">Complete wellhead solutions including conventional systems, multi-bowl wellheads, and a full line of tubing heads, hangers, seals, and bushings.</p>
         </div>
-        <div>
+        <div class="product-subsection-specs">
           <ul class="product-specs">
             <li><span class="label">Casing Hangers</span><span class="value">SW-22 · SW-29 · SW-21P</span></li>
             <li><span class="label">Tubing Hangers</span><span class="value">TC1B · TC1A · TC1A-EN · TC1W</span></li>
@@ -178,15 +197,16 @@
             <li><span class="label">Companion Flanges</span><span class="value">1-13/16" through 7-1/16" · 2,000–15,000 PSI · Blind, weld-neck, 410 SS options</span></li>
           </ul>
         </div>
+        <img class="product-subsection-img" src="assets/products/product-wellhead-front.png" alt="Wellheads &amp; Tubing Heads">
       </div>
 
       <!-- QuickLock BOP Adapter -->
       <div class="product-subsection">
-        <div>
+        <div class="product-subsection-meta">
           <h3>QuickLock BOP Adapter</h3>
           <p style="font-size: var(--fs-sm); color: var(--titan-steel);">Reduces cellar exposure and rig time while interfacing seamlessly with our offline cementing equipment.</p>
         </div>
-        <div>
+        <div class="product-subsection-specs">
           <ul class="product-specs">
             <li><span class="label">Time Savings</span><span class="value">2–3 hours of rig time per connection</span></li>
             <li><span class="label">Safety</span><span class="value">Less time in the cellar · Reduced personnel exposure to suspended loads</span></li>
@@ -194,15 +214,16 @@
             <li><span class="label">Integration</span><span class="value">Interfaces with offline cementing adapter</span></li>
           </ul>
         </div>
+        <img class="product-subsection-img" src="assets/products/product-quicklock-front.png" alt="QuickLock BOP Adapter">
       </div>
 
       <!-- QuickSet Wellhead -->
       <div class="product-subsection">
-        <div>
+        <div class="product-subsection-meta">
           <h3>QuickSet Wellhead</h3>
           <p style="font-size: var(--fs-sm); color: var(--titan-steel);">Pre-assembled and pretested wellhead system — saves rig time by allowing installation on the surface casing without welding.</p>
         </div>
-        <div>
+        <div class="product-subsection-specs">
           <ul class="product-specs">
             <li><span class="label">Installation</span><span class="value">Fully assembled and pretested · No welding required on surface casing</span></li>
             <li><span class="label">Landing Mandrel</span><span class="value">Easily installed through the rotary floor</span></li>
@@ -211,15 +232,16 @@
             <li><span class="label">Sealing</span><span class="value">Same field-proven design and low profile as Titan's Multi-Bowl Wellhead</span></li>
           </ul>
         </div>
+        <img class="product-subsection-img" src="assets/products/product-wellhead-side.png" alt="QuickSet Wellhead">
       </div>
 
       <!-- Multi-Bowl Wellhead -->
       <div class="product-subsection">
-        <div>
+        <div class="product-subsection-meta">
           <h3>Multi-Bowl Wellhead</h3>
           <p style="font-size: var(--fs-sm); color: var(--titan-steel);">Hang multiple casing strings in a single wellhead without breaking the BOP — saves installation time, increases safety, reduces footprint.</p>
         </div>
-        <div>
+        <div class="product-subsection-specs">
           <ul class="product-specs">
             <li><span class="label">Casing Head</span><span class="value">Standard off-the-shelf</span></li>
             <li><span class="label">Pack-off</span><span class="value">Single packoff for multiple casing strings</span></li>
@@ -228,15 +250,16 @@
             <li><span class="label">Compatibility</span><span class="value">Titan BOP Quick Connect · QuickSet Casing Head · Offline Cement systems</span></li>
           </ul>
         </div>
+        <img class="product-subsection-img" src="assets/products/product-wellhead-detail.png" alt="Multi-Bowl Wellhead">
       </div>
 
       <!-- Production Trees -->
       <div class="product-subsection">
-        <div>
+        <div class="product-subsection-meta">
           <h3>Production Trees</h3>
           <p style="font-size: var(--fs-sm); color: var(--titan-steel);">Full range of production trees — manual or actuated, in every standard size and material class.</p>
         </div>
-        <div>
+        <div class="product-subsection-specs">
           <ul class="product-specs">
             <li><span class="label">Pressure Rating</span><span class="value">3,000 – 15,000 PSI</span></li>
             <li><span class="label">Gate Valves</span><span class="value">API 6A monogrammed</span></li>
@@ -245,15 +268,16 @@
             <li><span class="label">Sizes</span><span class="value">All standard production tree sizes</span></li>
           </ul>
         </div>
+        <img class="product-subsection-img" src="assets/products/product-wellhead-context.png" alt="Production Trees">
       </div>
 
       <!-- Offline Cementing -->
       <div class="product-subsection">
-        <div>
+        <div class="product-subsection-meta">
           <h3>Offline Cementing</h3>
           <p style="font-size: var(--fs-sm); color: var(--titan-steel);">Quick swap from drilling to cementing without breaking the BOP — purpose-built for multi-well pads and batch drilling operations.</p>
         </div>
-        <div>
+        <div class="product-subsection-specs">
           <ul class="product-specs">
             <li><span class="label">System</span><span class="value">BOP QC Offline Cementing — adapts directly to Titan's BOP Quick Connect</span></li>
             <li><span class="label">Installation</span><span class="value">Adapter installed into lower BOP QC, held in place with clamp ring</span></li>
@@ -261,15 +285,16 @@
             <li><span class="label">Casing Sizes</span><span class="value">All standard intermediate and production casing sizes</span></li>
           </ul>
         </div>
+        <img class="product-subsection-img" src="assets/products/product-quicklock-context.png" alt="Offline Cementing">
       </div>
 
       <!-- Wellhead Components -->
       <div class="product-subsection">
-        <div>
+        <div class="product-subsection-meta">
           <h3>Wellhead Components</h3>
           <p style="font-size: var(--fs-sm); color: var(--titan-steel);">Complete line of conventional wellhead components — chokes, tubing head adapters, tree caps, and accessories.</p>
         </div>
-        <div>
+        <div class="product-subsection-specs">
           <ul class="product-specs">
             <li><span class="label">Chokes</span><span class="value">Positive &amp; adjustable · Flanged or threaded ends · 1-13/16" – 4-1/16" bore · 2,000–15,000 PSI</span></li>
             <li><span class="label">Tubing Head Adapters</span><span class="value">B-1 · B2P · A5P-EN · BO-2</span></li>
@@ -277,6 +302,7 @@
             <li><span class="label">Flange Sizes</span><span class="value">2-1/16" through 7-1/16" · 2,000–15,000 PSI · 410 stainless available</span></li>
           </ul>
         </div>
+        <img class="product-subsection-img" src="assets/products/product-quicklock-detail.png" alt="Wellhead Components">
       </div>
     </div>
   </section>
@@ -294,45 +320,48 @@
 
       <!-- Flex Hoses -->
       <div class="product-subsection">
-        <div>
+        <div class="product-subsection-meta">
           <h3>High-Pressure Flex Hoses</h3>
           <p style="font-size: var(--fs-sm); color: var(--titan-steel);">High-pressure flex hoses for frac operations and pressure-control applications.</p>
         </div>
-        <div>
+        <div class="product-subsection-specs">
           <ul class="product-specs">
             <li><span class="label">Inner Diameter</span><span class="value">2" &amp; 2.5"</span></li>
             <li><span class="label">Pressure Rating</span><span class="value">15K</span></li>
           </ul>
         </div>
+        <img class="product-subsection-img" src="assets/products/product-flex-hose-front.png" alt="High-Pressure Flex Hoses">
       </div>
 
       <!-- Couplings -->
       <div class="product-subsection">
-        <div>
+        <div class="product-subsection-meta">
           <h3>Couplings</h3>
           <p style="font-size: var(--fs-sm); color: var(--titan-steel);">Bonded couplings designed for high-pressure flex hose applications.</p>
         </div>
-        <div>
+        <div class="product-subsection-specs">
           <ul class="product-specs">
             <li><span class="label">Size</span><span class="value">3"</span></li>
             <li><span class="label">Construction</span><span class="value">Bonded</span></li>
           </ul>
         </div>
+        <img class="product-subsection-img" src="assets/products/product-flex-hose-detail.png" alt="Couplings">
       </div>
 
       <!-- End Connections -->
       <div class="product-subsection">
-        <div>
+        <div class="product-subsection-meta">
           <h3>End Connections</h3>
           <p style="font-size: var(--fs-sm); color: var(--titan-steel);">Multiple end connection options to integrate with any pressure-control system.</p>
         </div>
-        <div>
+        <div class="product-subsection-specs">
           <ul class="product-specs">
             <li><span class="label">Hammer Union</span><span class="value">1502</span></li>
             <li><span class="label">Flange</span><span class="value">Standard configurations</span></li>
             <li><span class="label">Titan Clamp</span><span class="value">Titan-specific connection</span></li>
           </ul>
         </div>
+        <img class="product-subsection-img" src="assets/products/product-flex-hose-side.png" alt="End Connections">
       </div>
     </div>
   </section>
@@ -349,17 +378,18 @@
       </p>
 
       <div class="product-subsection">
-        <div>
+        <div class="product-subsection-meta">
           <h3>Frac Automation</h3>
           <p style="font-size: var(--fs-sm); color: var(--titan-steel);">Engineered to work seamlessly with our frac stacks, zipper manifolds, and FastLine manifolds.</p>
         </div>
-        <div>
+        <div class="product-subsection-specs">
           <ul class="product-specs">
             <li><span class="label">Compatible With</span><span class="value">Frac stacks · Zipper manifolds · FastLine manifolds</span></li>
             <li><span class="label">Application</span><span class="value">High-pressure frac operations</span></li>
             <li><span class="label">Designed For</span><span class="value">Reducing operator exposure on location</span></li>
           </ul>
         </div>
+        <img class="product-subsection-img" src="assets/products/product-automation-front.png" alt="Frac Automation">
       </div>
     </div>
   </section>
@@ -376,17 +406,18 @@
       </p>
 
       <div class="product-subsection">
-        <div>
+        <div class="product-subsection-meta">
           <h3>Flowback Operations</h3>
           <p style="font-size: var(--fs-sm); color: var(--titan-steel);">Flowback equipment and personnel scoped specifically for post-frac well cleanup.</p>
         </div>
-        <div>
+        <div class="product-subsection-specs">
           <ul class="product-specs">
             <li><span class="label">Scope</span><span class="value">Frac flowback only</span></li>
             <li><span class="label">Not Included</span><span class="value">Production-side flowback · Sand handling</span></li>
             <li><span class="label">Coverage</span><span class="value">Permian · Bakken · Rockies</span></li>
           </ul>
         </div>
+        <img class="product-subsection-img" src="assets/products/product-fracstack-context.png" alt="Flowback Operations">
       </div>
     </div>
   </section>
