@@ -771,7 +771,6 @@ section { padding: var(--space-8) 0; }
 
 /* ---------- Quote block ---------- */
 .quote-block {
-  background: var(--titan-charcoal);
   color: var(--titan-white);
   padding: var(--space-9) 0;
   position: relative;
@@ -783,7 +782,6 @@ section { padding: var(--space-8) 0; }
   inset: 0;
   background-size: cover;
   background-position: center;
-  opacity: 0.25;
 }
 
 .quote-block .container {
