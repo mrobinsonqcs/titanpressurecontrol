@@ -18,6 +18,20 @@
   <link href="https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700;800;900&family=Manrope:wght@400;500;600;700&display=swap" rel="stylesheet">
 
   <link rel="stylesheet" href="css/styles.css">
+  <style>
+    .quote-block-bg::after {
+      content: '';
+      position: absolute;
+      inset: 0;
+      background: rgba(10,10,10,0.78);
+    }
+    .logo-strip { background: var(--titan-white); border-top: 1px solid #E5E5E5; border-bottom: 1px solid #E5E5E5; padding: var(--space-5) 0; }
+    .logo-strip .container { display: flex; align-items: center; gap: var(--space-6); flex-wrap: wrap; }
+    .logo-strip-label { font-family: var(--font-body); font-size: 0.75rem; font-weight: 600; letter-spacing: 0.12em; text-transform: uppercase; color: #999; white-space: nowrap; }
+    .logo-strip-logos { display: flex; align-items: center; gap: var(--space-7); flex-wrap: wrap; }
+    .logo-strip-logos img { height: 36px; width: auto; opacity: 0.55; filter: grayscale(100%); transition: opacity 0.2s ease, filter 0.2s ease; }
+    .logo-strip-logos img:hover { opacity: 0.85; filter: grayscale(60%); }
+  </style>
 </head>
 <body>
   <a class="skip-to-content" href="#main-content">Skip to main content</a>
@@ -67,8 +81,7 @@
 
   <!-- ============================== HERO ============================== -->
   <section class="hero">
-    <!-- Replace background-image with a real Titan photo (e.g., the frac stack/lightning shot from the brochure cover) -->
-    <div class="hero-bg" style="background-image: linear-gradient(135deg, #1A1A1A 0%, #0A0A0A 50%, #2A0808 100%);"></div>
+    <div class="hero-bg" style="background-image: url('assets/atmosphere/atmosphere-hero.png'); background-size: cover; background-position: center;"></div>
 
     <div class="container">
       <span class="eyebrow eyebrow-light hero-eyebrow reveal reveal-delay-1">Wellhead · Frac · Production</span>
@@ -102,6 +115,16 @@
     </div>
   </section>
 
+  <div class="logo-strip">
+    <div class="container">
+      <span class="logo-strip-label">Trusted by</span>
+      <div class="logo-strip-logos">
+        <img src="assets/logos/Black-Swan-logo-black-web.png" alt="Black Swan">
+        <img src="assets/logos/Green-River-logo.png" alt="Green River">
+      </div>
+    </div>
+  </div>
+
   <!-- ============================== VALUE PROP ============================== -->
   <section>
     <div class="container">
@@ -109,6 +132,7 @@
         <div>
           <span class="eyebrow">Why Titan</span>
           <hr class="red-rule">
+          <img src="assets/atmosphere/atmosphere-why-titan.png" alt="Titan crew and equipment on location" style="width:100%; aspect-ratio:4/3; object-fit:cover; border-radius:4px; display:block; margin-top:var(--space-5);">
         </div>
         <div class="body">
           <h2>Pressure control built for the field — backed by the people who run it.</h2>
@@ -203,8 +227,7 @@
 
   <!-- ============================== QUOTE / VOICE OF LEADERSHIP ============================== -->
   <section class="quote-block">
-    <div class="quote-block-bg" style="background-image: linear-gradient(135deg, #2A0808 0%, #0A0A0A 100%);"></div>
-    <!-- Replace background with a real on-location Titan photo -->
+    <div class="quote-block-bg" style="background-image: url('assets/atmosphere/atmosphere-quote-bg.png'); background-size: cover; background-position: center;"></div>
 
     <div class="container">
       <span class="quote-mark">"</span>
