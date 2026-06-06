@@ -16,11 +16,15 @@
         grid-template-columns: 1fr 1fr 1fr;
         align-items: start;
       }
+      .product-subsection-meta { grid-column: 1; grid-row: 1; }
+      .product-subsection-specs { grid-column: 2; grid-row: 1; }
+      .product-subsection-img { grid-column: 3; grid-row: 1; }
     }
     .product-subsection-img {
       width: 100%;
-      aspect-ratio: 4 / 3;
-      object-fit: contain;
+      aspect-ratio: 3 / 4;
+      object-fit: cover;
+      object-position: center top;
       display: block;
       background: var(--titan-charcoal);
     }
