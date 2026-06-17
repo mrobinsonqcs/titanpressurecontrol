@@ -825,8 +825,8 @@ section { padding: var(--space-8) 0; }
 }
 
 .quote-avatar {
-  width: 48px;
-  height: 48px;
+  width: 72px;
+  height: 72px;
   border-radius: 50%;
   background: var(--titan-graphite);
   display: flex;
@@ -842,7 +842,7 @@ section { padding: var(--space-8) 0; }
   width: 100%;
   height: 100%;
   object-fit: cover;
-  object-position: 15% 15%;
+  object-position: center 10%;
   border-radius: 50%;
 }
 
